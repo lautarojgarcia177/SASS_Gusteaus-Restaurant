@@ -13,9 +13,9 @@ function scrollToPopularDishes() {
 
 // Cambiar a imagen de fondo
 const backgroundImagesUrls = [
-    '/images/nav-img-1.jpeg',
-    '/images/nav-img-2.jpeg',
-    '/images/nav-img-3.jpeg',
+    'SASS_Gusteaus-Restaurant/images/nav-img-1.jpeg',
+    'SASS_Gusteaus-Restaurant/images/nav-img-2.jpeg',
+    'SASS_Gusteaus-Restaurant/images/nav-img-3.jpeg',
 ];
 let backgroundImagesUrlsIndex = 1;
 setInterval(function() {
