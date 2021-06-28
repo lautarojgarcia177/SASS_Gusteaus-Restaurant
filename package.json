@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "watch1": "node-sass -o css scss -w",
-        "watch2": "sass scss/main.sass css/main.css -w --no-source-map",
+        "watch2": "sass sass/main.sass css/main.css -w --no-source-map",
         "start": "http-server ."
     },
     "keywords": [],

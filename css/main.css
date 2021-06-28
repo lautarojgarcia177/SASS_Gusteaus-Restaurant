@@ -194,6 +194,10 @@ body {
   padding: 1rem;
 }
 
+.pt-1 {
+  padding: 1rem;
+}
+
 .m-1 {
   margin: 1rem;
 }
@@ -215,6 +219,10 @@ body {
 }
 
 .p-2 {
+  padding: 2rem;
+}
+
+.pt-2 {
   padding: 2rem;
 }
 
@@ -242,6 +250,10 @@ body {
   padding: 3rem;
 }
 
+.pt-3 {
+  padding: 3rem;
+}
+
 .m-3 {
   margin: 3rem;
 }
@@ -263,6 +275,10 @@ body {
 }
 
 .p-4 {
+  padding: 4rem;
+}
+
+.pt-4 {
   padding: 4rem;
 }
 
@@ -301,6 +317,10 @@ body {
   position: relative;
   top: 30vh;
   animation: outer-bottom 1s 0.5s both;
+}
+
+.max-width--75 {
+  max-width: 75%;
 }
 
 header {
@@ -348,6 +368,19 @@ h1 {
   margin: 3rem;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .about-us {
+    flex-wrap: nowrap;
+  }
+}
+.about-us-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about-us-right {
   height: 100%;
@@ -416,10 +449,15 @@ button:hover {
   color: white;
 }
 .card .card-overlay img {
-  display: block !important;
+  display: none;
   width: 30vw !important;
   height: auto !important;
   object-fit: cover !important;
+}
+@media (min-width: 768px) {
+  .card .card-overlay img {
+    display: block;
+  }
 }
 .card img {
   width: 100vw;

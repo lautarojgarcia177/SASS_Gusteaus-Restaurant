@@ -43,6 +43,15 @@ h1
     margin: 3rem
     border-radius: 5px
     background-color: rgba(0, 0, 0, base.$background-opacity--transparent)
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    @media (min-width: 768px)
+        flex-wrap: nowrap
+    &-left
+        display: flex
+        justify-content: center
+        align-items: center
     &-right
         height: 100%
         display: flex
@@ -96,7 +105,9 @@ button
         .card-overlay-paragraph
             color: base.$font-color--primary
         img
-            display: block !important
+            display: none 
+            @media (min-width: 768px)
+                display: block
             width: 30vw !important
             height: auto !important
             object-fit: cover !important
