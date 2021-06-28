@@ -344,7 +344,7 @@ header::after {
   right: 0;
   bottom: 0;
   display: block;
-  background: url("SASS_Gusteaus-Restaurant/images/bg.jpeg");
+  background: url("../images/bg.jpeg");
   background-size: cover;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
