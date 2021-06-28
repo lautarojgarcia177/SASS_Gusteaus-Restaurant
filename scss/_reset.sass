@@ -1,0 +1,22 @@
+@use 'base'
+
+*
+    @extend %no-margin-no-padding
+    box-sizing: border-box
+
+
+html
+    @extend %no-margin-no-padding
+    overflow: hidden
+    scroll-behavior: smooth
+
+body
+    color: white
+    @extend %no-margin-no-padding
+    perspective: 1px
+    transform-style: preserve-3d
+    overflow-y: scroll
+    overflow-x: hidden
+
+figure
+    @extend %no-margin-no-padding

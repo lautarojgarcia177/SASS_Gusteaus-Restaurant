@@ -1,0 +1,50 @@
+// Hoja de estilos que reune variables y estilos generales(@mixin) aplicables a diversos elementos/bloques
+
+/** Fuentes **/
+$font-dancingScript: 'Dancing Script', cursive
+$font-josefineSans: 'Josefin Sans', san-serif
+$font-nunito: 'Nunito', san-serif
+
+/** Colores **/
+$color--primary: white
+$color--accent: gold
+$color--accent--opaque: #ac9204
+$font-color--primary: white
+$font-color--accent: gold
+
+$primary-background-color: rgb(139, 91, 27)
+$background-opacity--transparent: 0.7
+
+/** placeholder para ancho y alto al 100% **/
+%full-space 
+    width: 100%
+    height: 100%
+
+%no-margin-no-padding
+    margin: 0
+    padding: 0
+
+/** Tamaños de fuentes **/
+@for $i from 1 through 4
+    .fs-#{$i}
+        font-size: #{$i}rem
+
+/** Sombra para el texto **/
+.text-shadow
+    text-shadow: 1px 1px 2px black
+
+.hidden
+    opacity: 0
+
+/** Colores para el texto **/
+.fc-
+    &primary
+        color: $font-color--primary
+    &accent
+        color: $font-color--accent
+
+/** mixin que define un estilo de texto particular
+@mixin text-styles($transform: upppercase) 
+    font-weight: 300
+    letter-spacing: 2px
+    text-transform: $transform

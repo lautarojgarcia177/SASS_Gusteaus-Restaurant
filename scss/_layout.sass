@@ -1,0 +1,94 @@
+// En layout vamos a setear los estilos correspondientes al layout
+// Se trabaja con los elementos div y section teniendo en cuenta su className y algunos elementos con estilos no reutilizables
+@use 'base'
+
+.container
+    z-index: 2
+    position: absolute
+    top: 100vh
+    background: black
+    color: grey
+
+.content
+    position: relative
+    margin: -100vh auto 0
+    width: 100vw
+
+/** Flexbox **/
+.d-flex
+    display: flex
+
+.flex-wrap
+    flex-wrap: wrap
+
+.flex-column
+    flex-direction: column
+
+.justify-content-center
+    justify-content: center
+
+.justify-content-evenly
+    justify-content: space-evenly
+
+.align-items-center
+    align-items: center
+
+.align-items-start
+    align-items: start
+
+.align-self-center
+    align-self: center
+
+.content__background
+    position: sticky
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    z-index: -2
+    img
+        display: block
+        @extend %full-space
+        object-fit: cover
+        animation: fade-in-out 5s
+
+.flex
+    display: flex
+    flex-wrap: wrap
+
+/** alineacion del texto **/
+.text-
+    &center
+        text-align: center
+    &justify
+        text-align: justify
+
+/** Margenes y padding **/
+@for $i from 1 through 4
+    .p-#{$i}
+        padding: #{$i}rem
+    .m-#{$i}
+        margin: #{$i}rem
+    .mr-#{$i}
+        margin-right: #{$i}rem
+    .ml-#{$i}
+        margin-left: #{$i}rem
+    .mt-#{$i}
+        margin-top: #{$i}rem
+    .mb-#{$i}
+        margin-bottom: #{$i}rem
+    
+
+.about-us
+    display: flex
+    justify-content: around
+
+.brand
+    position: relative
+    top: 15vh
+    animation: fade-in 3s
+
+.header-banner
+    position: relative
+    top: 30vh
+    animation: outer-bottom 1s 0.5s both

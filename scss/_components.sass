@@ -1,0 +1,186 @@
+// En components definimos estilos para elementos htmls concretos (a, p, h1,h3) pero teniendo solo en cuenta su nameClass
+@use 'reset'
+@use 'base'
+@use 'layout'
+
+header
+    box-sizing: border-box
+    min-height: 100vh
+    position: relative
+    width: 100vw
+    text-align: center
+    @include base.text-styles(uppercase)
+
+    &:after
+        background: 50% 50% / cover
+
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        display: block
+        background: url('/images/bg.jpeg')
+        background-size: cover
+        transform-origin: center center 0
+        transform: translateZ(-1px) scale(2)
+        z-index: -1
+        min-height: 100vh
+
+h1
+    font-family: base.$font-dancingScript
+    color: base.$font-color--accent
+
+.logo
+    color: base.$font-color--primary
+    font-size: 50px
+    border: 3px solid gold
+    border-radius: 50%
+
+.about-us
+    margin: 3rem
+    border-radius: 5px
+    background-color: rgba(0, 0, 0, base.$background-opacity--transparent)
+    &-right
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: around
+        align-items: center
+    .main-heading
+        font-size: 3rem
+        color: base.$font-color--accent
+    .sub-heading
+        color: base.$font-color--primary
+    .stars
+        color: base.$font-color--accent
+    .description
+        color: base.$font-color--primary
+    .main-btn
+        margin-top: 1rem
+
+.footer
+    background-color: base.$primary-background-color
+
+button
+    text-decoration: none
+    padding: 0.5rem
+    font-family: base.$font-josefineSans
+    cursor: pointer
+    transition: all 0.5s
+    border: none
+    &:hover
+        background-color: base.$color--accent--opaque
+        color: base.$font-color--primary
+
+.fa-arrow-down
+    position: relative
+    top: 35vh
+    font-size: 3rem
+    animation: slide1 0.65s ease-in-out infinite
+    cursor: pointer
+    transition: all 0.65s 
+    &:hover
+        color: base.$font-color--accent
+
+.card
+    margin-bottom: 60px
+    position: relative
+    .card-overlay
+        position: absolute
+        height: 400px
+        width: 100vw
+        display: none
+        .card-overlay-paragraph
+            color: base.$font-color--primary
+        img
+            display: block !important
+            width: 30vw !important
+            height: auto !important
+            object-fit: cover !important
+    img
+        width: 100vw
+        height: 400px
+        object-fit: cover
+    &:hover
+        .card-overlay
+            background-color: rgba(base.$primary-background-color, base.$background-opacity--transparent)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+/** Animaciones **/
+.inner-left
+    animation: inner-left 0.5s
+
+.inner-right
+    animation: inner-right 0.5s
+
+/** Links a redes sociales **/
+$color--shadow: rgba(0, 0, 0, 0.1)
+.social-links
+  display: inline-flex
+  .icon
+    position: relative
+    background-color: base.$font-color--primary
+    border-radius: 50%
+    padding: 15px
+    margin: 10px
+    width: 50px
+    height: 50px
+    font-size: 18px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    box-shadow: 0 10px 10px $color--shadow
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    &:hover
+      .tooltip
+        top: -45px
+        opacity: 1
+        visibility: visible
+        pointer-events: auto
+        text-shadow: 0px -1px 0px $color--shadow
+      span
+        text-shadow: 0px -1px 0px $color--shadow
+  .tooltip
+    position: absolute
+    top: 0
+    font-size: 14px
+    background-color: base.$font-color--primary
+    color: base.$font-color--primary
+    padding: 5px 8px
+    border-radius: 5px
+    box-shadow: 0 10px 10px $color--shadow
+    opacity: 0
+    pointer-events: none
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    &::before
+      position: absolute
+      content: ""
+      height: 8px
+      width: 8px
+      background-color: base.$font-color--primary
+      bottom: -3px
+      left: 50%
+      transform: translate(-50%) rotate(45deg)
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+  .facebook:hover, .facebook:hover .tooltip,  .facebook:hover .tooltip::before
+    background-color: #3b5999
+    color: base.$font-color--primary
+  .twitter:hover, .twitter:hover .tooltip, .twitter:hover .tooltip::before
+    background-color: #46c1f6
+    color: base.$font-color--primary
+  .instagram:hover, .instagram:hover .tooltip, .instagram:hover .tooltip::before
+    background-color: #e1306c
+    color: base.$font-color--primary
+  .github:hover, .github:hover .tooltip, .github:hover .tooltip::before
+    background-color: #333333
+    color: base.$font-color--primary
+  .youtube:hover, .youtube:hover .tooltip, .youtube:hover .tooltip::before
+    background-color: #de463b
+    color: base.$font-color--primary

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Se usan iconos de font awesome https://fontawesome.com/v5.15/icons?d=gallery&p=2 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Fuentes de googleapis -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700" rel="stylesheet">
+    <title>Restaurant "Gusteaus's"</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="brand">
+            <a href="#" class="logo text-shadow" style="padding: 15px 20px 15px 20px;">
+                <i class="fas fa-utensils"></i>
+            </a>
+            <h1 class="main-name fs-4 mt-1 text-shadow">Gusteaus's</h1>
+            <p class="sub-name fs-2">Restaurant</p>
+        </div>
+        <div class="header-banner">
+            <h1 class="main-heading">Welcome!</h1>
+            <h3 class="sub-heading">Try Great Gusteaus's Dishes</h3>
+        </div>
+        <i class="fas fa-arrow-down" onclick="scrollToAboutUs()"></i>
+    </header>
+    <!-- End of Header -->
+    <div class="container">
+        <figure class="content__background">
+            <img id="background-img" src="images/nav-img-1.jpeg">
+        </figure>
+        <div class="content">
+            <!-- About Us -->
+            <section id="about-us" class="about-us p-2">
+                <div class="about-us-left">
+                    <img src="images/about-us-img.png" alt="about-us">
+                </div>
+                <div class="about-us-right">
+                    <h1 class="main-heading mb-2">About Us</h1>
+                    <h3 class="sub-heading mb-1">Introduce To Gusteaus's Dishes</h3>
+                    <div class="stars">
+                        <i class="fas fa-star-of-life star"></i>
+                        <i class="fas fa-star-of-life star"></i>
+                        <i class="fas fa-star-of-life star"></i>
+                    </div>
+                    <p class="description m-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam quo praesentium doloremque aut aliquid omnis exercitationem non nihil! Pariatur maiores ut illo laboriosam? Fuga provident modi sequi tenetur ipsum?
+                    </p>
+                    <div class="stars mb-2">
+                        <i class="fas fa-star-of-life star"></i>
+                        <i class="fas fa-star-of-life star"></i>
+                        <i class="fas fa-star-of-life star"></i>
+                    </div>
+                    <button type="button" class="main-btn" onclick="scrollToPopularDishes()">Popular dishes</button>
+                </div>
+            </section>
+            <!-- End of About Us -->
+            <!-- Gallery -->
+            <section class="gallery">
+                <div class="cards-wrapper">
+                    <!-- encabezado y estructura de cada alimento -->
+                    <div class="card">
+                        <div class="card-overlay inner-left">
+                            <div class="d-flex justify-content-evently align-items-start">
+                                <div class="mr-2 d-flex flex-column justify-content-center align-items-start">
+                                    <h1 class="card-overlay-heading fs-4">Food Name</h1>
+                                    <p class="card-overlay-paragraph fs-2 mb-1">Price: $30.00</p>
+                                    <button type="button" class="card-overlay-btn align-self-center">Order Now</button>
+                                </div>
+                                <img src="images/gallery-img-1.jpeg" alt="img1" class="card-img">
+                            </div>
+                        </div>
+                        <img src="images/gallery-img-1.jpeg" alt="img1" class="card-img">
+                    </div>
+                    <div class="card">
+                        <div class="card-overlay inner-right">
+                            <div class="d-flex justify-content-evently align-items-start">
+                                <div class="mr-2 d-flex flex-column justify-content-center align-items-start">
+                                    <h1 class="card-overlay-heading fs-4">Food Name</h1>
+                                    <p class="card-overlay-paragraph fs-2 mb-1">Price: $30.00</p>
+                                    <button type="button" class="card-overlay-btn align-self-center">Order Now</button>
+                                </div>
+                                <img src="images/gallery-img-2.jpeg" alt="img1" class="card-img">
+                            </div>
+                        </div>
+                        <img src="images/gallery-img-2.jpeg" alt="img1" class="card-img">
+                    </div>
+                    <div class="card">
+                        <div class="card-overlay inner-left">
+                            <div class="d-flex justify-content-evently align-items-start">
+                                <div class="mr-2 d-flex flex-column justify-content-center align-items-start">
+                                    <h1 class="card-overlay-heading fs-4">Food Name</h1>
+                                    <p class="card-overlay-paragraph fs-2 mb-1">Price: $30.00</p>
+                                    <button type="button" class="card-overlay-btn align-self-center">Order Now</button>
+                                </div>
+                                <img src="images/gallery-img-3.jpeg" alt="img1" class="card-img">
+                            </div>
+                        </div>
+                        <img src="images/gallery-img-3.jpeg" alt="img1" class="card-img">
+                    </div>
+                    <div class="card">
+                        <div class="card-overlay inner-right">
+                            <div class="d-flex justify-content-evently align-items-start">
+                                <div class="mr-2 d-flex flex-column justify-content-center align-items-start">
+                                    <h1 class="card-overlay-heading fs-4">Food Name</h1>
+                                    <p class="card-overlay-paragraph fs-2 mb-1">Price: $30.00</p>
+                                    <button type="button" class="card-overlay-btn align-self-center">Order Now</button>
+                                </div>
+                                <img src="images/gallery-img-4.jpeg" alt="img1" class="card-img">
+                            </div>
+                        </div>
+                        <img src="images/gallery-img-4.jpeg" alt="img1" class="card-img">
+                    </div>
+                    <div class="card">
+                        <div class="card-overlay inner-left">
+                            <div class="d-flex justify-content-evently align-items-start">
+                                <div class="mr-2 d-flex flex-column justify-content-center align-items-start">
+                                    <h1 class="card-overlay-heading fs-4">Food Name</h1>
+                                    <p class="card-overlay-paragraph fs-2 mb-1">Price: $30.00</p>
+                                    <button type="button" class="card-overlay-btn align-self-center">Order Now</button>
+                                </div>
+                                <img src="images/gallery-img-5.jpeg" alt="img1" class="card-img">
+                            </div>
+                        </div>
+                        <img src="images/gallery-img-5.jpeg" alt="img1" class="card-img">
+                    </div>
+                    <div class="card">
+                        <div class="card-overlay inner-right">
+                            <div class="d-flex justify-content-evently align-items-start">
+                                <div class="mr-2 d-flex flex-column justify-content-center align-items-start">
+                                    <h1 class="card-overlay-heading fs-4">Food Name</h1>
+                                    <p class="card-overlay-paragraph fs-2 mb-1">Price: $30.00</p>
+                                    <button type="button" class="card-overlay-btn align-self-center">Order Now</button>
+                                </div>
+                                <img src="images/gallery-img-6.jpeg" alt="img1" class="card-img">
+                            </div>
+                        </div>
+                        <img src="images/gallery-img-6.jpeg" alt="img1" class="card-img">
+                    </div>
+                </div>
+            </section>
+            <!-- End Gallery -->
+            <footer class="footer">
+                <div class="d-flex flex-wrap justify-content-center align-items-center">
+                    <div class="footer-header d-flex align-items-center mr-2">
+                        <a href="#" class="logo m-1"><i class="fas fa-utensils m-1"></i></a>
+                        <div class="text-center">
+                            <h1 class="main-name">Gusteaus's</h1>
+                            <p class="sub-name fc-primary">Restaurant</p>
+                        </div>
+                    </div>
+                    <div class="social-links ml-2">
+                        <div class="icon facebook">
+                            <div class="tooltip">Facebook</div>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </div>
+                        <div class="icon twitter">
+                            <div class="tooltip">Twitter</div>
+                            <span><i class="fab fa-twitter"></i></span>
+                        </div>
+                        <div class="icon instagram">
+                            <div class="tooltip">Instagram</div>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </div>
+                        <div class="icon github">
+                            <div class="tooltip">Github</div>
+                            <span><i class="fab fa-github"></i></span>
+                        </div>
+                        <div class="icon youtube">
+                            <div class="tooltip">Youtube</div>
+                            <span><i class="fab fa-youtube"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    <p class="footer-copyright-paragraph text-center p-1 fc-primary">
+                        &copy; Copyright. Restaurant "Gusteaus's". All Right Reserved
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

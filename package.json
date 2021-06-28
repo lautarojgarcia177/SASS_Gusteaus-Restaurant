@@ -1,0 +1,14 @@
+{
+    "name": "RestaurantGusteaus",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "watch1": "node-sass -o css scss -w",
+        "watch2": "sass scss/main.sass css/main.css -w --no-source-map",
+        "start": "http-server ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
