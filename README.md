@@ -1,5 +1,5 @@
 # SASS_Gusteaus-Restaurant
-SASS Proyect I developed to showcase my SASS skills for Naranja X IT academy.
+Responsive SASS Proyect I developed to showcase my SASS skills for Naranja X IT academy.
 
 Please take a look at it: https://lautarojgarcia177.github.io/SASS_Gusteaus-Restaurant/
 
@@ -13,7 +13,7 @@ Partial where i put all the animations
 #### _base.sass
 Partial where i put variables, placeholdes, common classes like font-size and mixings
 #### _components.sass
-Partial where where the "heavy lifting" goes, here i put all the classes and id styles
+Partial where where the "heavy lifting" goes, here i put all the classes, id styles and media queries
 #### _layout.sass
 Partial where i put the utilities for layout like flex and spacing
 #### _reset.sass
