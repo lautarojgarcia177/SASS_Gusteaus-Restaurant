@@ -485,6 +485,11 @@ button:hover {
 .social-links {
   display: inline-flex;
 }
+@media (min-width: 768px) {
+  .social-links {
+    margin-left: 2rem;
+  }
+}
 .social-links .icon {
   position: relative;
   background-color: white;
